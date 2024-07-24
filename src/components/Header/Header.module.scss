@@ -1,0 +1,105 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 26px;
+  border-bottom: 0.5px solid #a4acad;
+  margin-bottom: 40px;
+  .header__left {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    .header__phone {
+      position: relative;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      padding-right: 20px;
+      &::after {
+        content: "";
+        background: #a4acad;
+        width: 0.5px;
+        height: 118px;
+        position: absolute;
+        top: -20px;
+        right: -10px;
+      }
+      .header__phone-title {
+        h3 {
+          font-weight: 500;
+          color: #111;
+          font-size: 18px;
+        }
+      }
+      .header__phone-list {
+        .header__phone-item {
+          a {
+            font-weight: 500;
+            font-size: 18px;
+
+            line-height: 1;
+            text-align: center;
+            color: #ff9846;
+          }
+        }
+      }
+      .header__operating-mode {
+        h3 {
+          font-weight: 500;
+          font-size: 14px;
+          text-align: center;
+          color: #a4acad;
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
+        }
+      }
+    }
+    .header__city {
+      display: flex;
+      flex-direction: column;
+      row-gap: 7px;
+      text-align:end;
+      .headerCity-title {
+        h3 {
+          font-weight: 300;
+          font-size: 14px;
+          text-align: center;
+          color: #a4acad;
+        }
+      }
+      .headerCity-action {
+        h3 {
+          font-weight: 400;
+          font-size: 18px;
+          text-align: center;
+          color: #000;
+        }
+      }
+    }
+  }
+  .header__right {
+    display: flex;
+    column-gap: 60px;
+    align-items: center;
+    .header__nav {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      .nav__item {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        color: #111;
+        transition: color 0.3s ease;
+        &:hover {
+          color: #ff9846;
+        }
+      }
+    }
+    .header__search {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.product__content {
+  .product__content-header {
+    display: flex;
+    justify-content: space-between;
+    .header__title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      h3 {
+        font-weight: 400;
+        font-size: 36px;
+        color: #000;
+      }
+    }
+    .header__sort {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 18px 6px rgba(0, 0, 0, 0.09);
+      padding: 4px 9px;
+      .sort__title {
+        font-weight: 300;
+        font-size: 14px;
+        color: #a4acad;
+      }
+      .sort__title-default {
+        font-weight: 400;
+        font-size: 18px;
+        color: #f46d40;
+      }
+    }
+  }
+  .product__content-row {
+    margin: 40px 0;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+    }
+  }
+}
