@@ -6,7 +6,7 @@ const SideBar = () => {
   return (
     <div className={styles.sideBar}>
       <div className={styles.logo}>
-        <Link to="/">
+        <Link to="/Romsem">
           <img src={logo} alt="logo" />
         </Link>
       </div>

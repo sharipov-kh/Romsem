@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import styles from "./Product.module.scss";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import prevBtn from '../../assets/Icon/product/prevBtn.svg'
 
 const Product = () => {
   const { path, id } = useParams();
@@ -15,9 +16,7 @@ const Product = () => {
   return (
     <div className={styles.Product}>
       <div className={styles.Product__navigation}>
-        <button onClick={() => window.history.back()}>Назад</button>
-        <button onClick={() => window.history.forward()}>Вперед</button>
-        <p>{product.name}</p>
+        <button onClick={() => window.history.back()}><img src={ prevBtn } alt="prevBtn"/> Назад</button>
       </div>
     </div>
   );
