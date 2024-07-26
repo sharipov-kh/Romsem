@@ -1,0 +1,10 @@
+.loader {
+  background: #fff;
+  border-radius: 15px;
+  padding: 17px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 18px 6px rgba(63, 63, 63, 0.199);
+  }
+}

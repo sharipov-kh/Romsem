@@ -1,0 +1,8 @@
+.sort__list-item {
+  transition: color 0.3s ease-in-out;
+  margin-top: 10px;
+  &:hover {
+    color: #f46d40;
+    cursor: pointer;
+  }
+}

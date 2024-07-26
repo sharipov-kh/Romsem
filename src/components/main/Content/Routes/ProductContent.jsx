@@ -3,12 +3,23 @@ import axios from "axios";
 
 import styles from "./style/ProductContent.module.scss";
 import Card from "../Card/Card";
+import Loading from "../../../UI/Loader/Loading";
+import SortItem from "./SortItem";
 
-const ProductContent = ({path, title, icon }) => {
+
+const ProductContent = ({ path, title, icon }) => {
   const [product, setProduct] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [sort, setSort] = useState("По умолчанию");
 
   useEffect(() => {
-    axios(`http://localhost:8080/${path}`).then(({ data }) => setProduct(data));
+    (async () => {
+      setIsLoading(true);
+      await axios(`http://localhost:8080/${path}`).then(({ data }) =>
+        setProduct(data)
+      );
+      setIsLoading(false);
+    })();
   }, []);
   return (
     <div className={styles.product__content}>
@@ -26,7 +37,7 @@ const ProductContent = ({path, title, icon }) => {
         <div className={styles["header__sort"]}>
           <p className={styles.sort__title}>Сортировка</p>
           <p className={styles["sort__title-default"]}>
-            По умолчанию
+            {sort}
             <span>
               <svg
                 width="14"
@@ -43,22 +54,56 @@ const ProductContent = ({path, title, icon }) => {
               </svg>
             </span>
           </p>
+          <ul className={styles["header__sort-list"]}>
+            <SortItem setSort={setSort} text="Название" />
+            <SortItem setSort={setSort} text="Сначала дороже" />
+            <SortItem setSort={setSort} text="Сначала дешевле" />
+            {path === "sets" ? (
+              <>
+                <SortItem setSort={setSort} text="Количество кусочков" />
+                <SortItem setSort={setSort} text="Вес" />
+              </>
+            ) : (
+              ""
+            )}
+          </ul>
         </div>
       </div>
       <div className={styles["product__content-row"]}>
         <div className={styles.container}>
-          {product.map((item) => (
-            <Card
-              key={item.id}
-              image={item.imageUrl}
-              name={item.name}
-              sizes={item.sizes}
-              price={item.price}
-              path={path}
-              ingredients={item.ingredients}
-              categories={item.categories}
-            />
-          ))}
+          {isLoading
+            ? Array.from({ length: 12 }).map((_, index) => (
+                <Loading key={`loading-${index}`}>Загрузка</Loading>
+              ))
+            : product
+                .sort((a, b) => {
+                  if (sort === "Название") {
+                    return a.name > b.name ? 1 : -1;
+                  } else if (sort === "Сначала дороже") {
+                    return b.price - a.price;
+                  } else if (sort === "Сначала дешевле") {
+                    return a.price - b.price;
+                  } else if (sort === "Количество кусочков") {
+                    return a.count - b.count;
+                  } else if (sort === "Вес") {
+                    return a.weight - b.weight;
+                  }
+                })
+                .map((item) => (
+                  <Card
+                    key={item.id}
+                    id={item.id}
+                    image={item.imageUrl}
+                    name={item.name}
+                    sizes={item.sizes}
+                    price={item.price}
+                    path={path}
+                    count={item.count}
+                    weight={item.weight}
+                    ingredients={item.ingredients}
+                    categories={item.categories}
+                  />
+                ))}
         </div>
       </div>
     </div>

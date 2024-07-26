@@ -13,6 +13,7 @@ import Drinks from "./Routes/Drinks";
 import Combo from "./Routes/Combo";
 import Promotion from "./Routes/Promotion";
 import Main from "./Routes/Main";
+import Product from "../../Product/Product";
 
 const Content = () => {
   return (
@@ -32,6 +33,7 @@ const Content = () => {
           <Route path="/drinks" element={<Drinks />} />
           <Route path="/combo" element={<Combo />} />
           <Route path="/promotion" element={<Promotion />} />
+          <Route path={'/:path/product/:id'} element={<Product />} />
         </Routes>
       </div>
     </div>

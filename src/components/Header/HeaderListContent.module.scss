@@ -1,0 +1,68 @@
+.header__search-container {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  width: 450px;
+  z-index: 100;
+  box-shadow: 0 0 18px 6px rgba(63, 63, 63, 0.199);
+  max-height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона трека скроллбара */
+    border-radius: 10px; /* Радиус скругления трека */
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #f46d40; /* Цвет ползунка скроллбара */
+    border-radius: 10px; /* Радиус скругления ползунка */
+    transition: background 0.3s ease-in-out;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #f46d40c0; /* Цвет ползунка при наведении */
+  }
+  .header__search-list {
+    .header__search-item {
+      margin-top: 10px;
+      .search__item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .search__item-img img {
+          width: 70px;
+          height: 70px;
+        }
+        .search__item-text {
+          flex-grow: 1;
+          .item__text-name {
+            font-weight: 500;
+            font-size: 24px;
+            color: #000;
+          }
+          .item__text-description {
+            font-weight: 400;
+            font-size: 18px;
+            color: #a4acad;
+            margin-top: 10px;
+          }
+        }
+        .search__item-price p {
+          color: #a4acad;
+          font-weight: 700;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+.empty-massege {
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+}

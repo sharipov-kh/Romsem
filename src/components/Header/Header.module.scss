@@ -60,7 +60,7 @@
       display: flex;
       flex-direction: column;
       row-gap: 7px;
-      text-align:end;
+      text-align: end;
       .headerCity-title {
         h3 {
           font-weight: 300;
@@ -80,6 +80,7 @@
     }
   }
   .header__right {
+    position: relative;
     display: flex;
     column-gap: 60px;
     align-items: center;
@@ -100,6 +101,18 @@
     }
     .header__search {
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .search__input {
+        border-bottom: 1px solid #a4acad;
+        font-size: 18px;
+        color: #a4acad;
+        padding: 5px;
+        &::placeholder {
+          color: #a4acad;
+        }
+      }
     }
   }
 }

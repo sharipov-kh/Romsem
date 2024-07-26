@@ -108,7 +108,8 @@
       "name": "Средний сет",
       "price": 1000,
       "categories": "Сеты",
-      "ingredients": ["Ролл с тунцом", "Ролл с угрем", "Темпура роллы"]
+      "count": 30,
+      "weight": 1200
     },
     {
       "id": 2,
@@ -116,7 +117,8 @@
       "name": "Малый сет",
       "price": 800,
       "categories": "Сеты",
-      "ingredients": ["Ролл с лососем", "Ролл с авокадо", "Суши с креветкой"]
+      "count": 10,
+      "weight": 250
     },
     {
       "id": 3,
@@ -124,13 +126,8 @@
       "name": "Сет Ассорти",
       "price": 2000,
       "categories": "Сеты",
-      "ingredients": [
-        "Дракон",
-        "Спайси тунец",
-        "Темпура роллы",
-        "Ролл с икрой",
-        "Суши с мидиями"
-      ]
+      "count": 8,
+      "weight": 230
     },
     {
       "id": 4,
@@ -138,12 +135,8 @@
       "name": "Вегетарианский сет",
       "price": 1200,
       "categories": "Сеты",
-      "ingredients": [
-        "Ролл с авокадо",
-        "Ролл с манго",
-        "Ролл с огурцом",
-        "Ролл с сыром"
-      ]
+      "count": 32,
+      "weight": 1300
     },
     {
       "id": 5,
@@ -151,11 +144,8 @@
       "name": "Сет Филадельфия",
       "price": 1400,
       "categories": "Сеты",
-      "ingredients": [
-        "Филадельфия",
-        "Филадельфия с огурцом",
-        "Филадельфия с авокадо"
-      ]
+      "count": 38,
+      "weight": 1500
     },
     {
       "id": 6,
@@ -163,11 +153,8 @@
       "name": "Сет Калифорния",
       "price": 1300,
       "categories": "Сеты",
-      "ingredients": [
-        "Калифорния с крабом",
-        "Калифорния с тунцом",
-        "Калифорния с авокадо"
-      ]
+      "count": 6,
+      "weight": 200
     },
     {
       "id": 7,
@@ -175,11 +162,8 @@
       "name": "Темпура сет",
       "price": 1600,
       "categories": "Сеты",
-      "ingredients": [
-        "Темпура роллы с креветкой",
-        "Темпура роллы с лососем",
-        "Темпура роллы с угрем"
-      ]
+      "count": 10,
+      "weight": 400
     },
     {
       "id": 8,
@@ -187,7 +171,8 @@
       "name": "Сет с угрем",
       "price": 1500,
       "categories": "Сеты",
-      "ingredients": ["Ролл с угрем", "Суши с угрем", "Темпура роллы с угрем"]
+      "count": 15,
+      "weight": 600
     },
     {
       "id": 9,
@@ -195,12 +180,8 @@
       "name": "Сет Суши",
       "price": 1800,
       "categories": "Сеты",
-      "ingredients": [
-        "Суши с лососем",
-        "Суши с тунцом",
-        "Суши с креветкой",
-        "Суши с угрем"
-      ]
+      "count": 18,
+      "weight": 700
     },
     {
       "id": 10,
@@ -208,12 +189,8 @@
       "name": "Сет Роллы",
       "price": 1700,
       "categories": "Сеты",
-      "ingredients": [
-        "Ролл Дракон",
-        "Филадельфия",
-        "Калифорния",
-        "Спайси тунец"
-      ]
+      "count": 23,
+      "weight": 850
     },
     {
       "id": 11,
@@ -221,7 +198,8 @@
       "name": "Большой сет",
       "price": 1500,
       "categories": "Сеты",
-      "ingredients": ["Ролл Дракон", "Филадельфия", "Калифорния", "Сяке маки"]
+      "count": 45,
+      "weight": 2000
     }
   ],
   "sushi": [
@@ -413,7 +391,7 @@
   "rolls": [
     {
       "id": 1,
-      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/744-1300.jpg",
+      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/744-300.jpg",
       "name": "Ролл с тунцом",
       "price": 280,
       "categories": "Роллы",
@@ -421,7 +399,7 @@
     },
     {
       "id": 2,
-      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1462-1300.jpg",
+      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1462-300.jpg",
       "name": "Калифорния ролл",
       "price": 270,
       "categories": "Роллы",
@@ -429,7 +407,7 @@
     },
     {
       "id": 3,
-      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/825-1300.jpg",
+      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/825-300.jpg",
       "name": "Филадельфия ролл",
       "price": 290,
       "categories": "Роллы",
@@ -461,7 +439,7 @@
     },
     {
       "id": 7,
-      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1463-1300.jpg",
+      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1463-300.jpg",
       "name": "Авокадо ролл",
       "price": 240,
       "categories": "Роллы",
@@ -469,7 +447,7 @@
     },
     {
       "id": 8,
-      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/676-1300.jpg",
+      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/676-300.jpg",
       "name": "Креветка ролл",
       "price": 260,
       "categories": "Роллы",
@@ -485,7 +463,7 @@
     },
     {
       "id": 10,
-      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/661-1300.jpg",
+      "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/661-300.jpg",
       "name": "Ролл с лососем",
       "price": 250,
       "categories": "Роллы",
@@ -1147,5 +1125,1070 @@
       "categories": "Акции",
       "description": "Скидка 20% на весь ассортимент суши. Акция действует до конца месяца."
     }
-  ]
+  ],
+  "all": {
+    "pizza": [
+      {
+        "id": 0,
+        "imageUrl": "https://media.dodostatic.net/image/r:233x233/11EE7D61698827EE9B8DB6D0AEC53410.avif",
+        "name": "Пепперони Фреш с перцем",
+        "types": [0, 1],
+        "sizes": [26, 30, 40],
+        "price": 803,
+        "category": 0,
+        "rating": 4
+      },
+      {
+        "id": 1,
+        "imageUrl": "https://media.dodostatic.net/image/r:233x233/11EE7D610BBEB562BD4D48786AD87270.avif",
+        "name": "Сырная",
+        "types": [0],
+        "sizes": [26, 40],
+        "price": 245,
+        "category": 1,
+        "rating": 6
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://media.dodostatic.net/image/r:233x233/11EE7D61BB2BD856BD5DFD71FB7D4210.avif",
+        "name": "Цыпленок барбекю",
+        "types": [0],
+        "sizes": [26, 30, 40],
+        "price": 295,
+        "category": 1,
+        "rating": 4
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://media.dodostatic.net/image/r:233x233/11EE7D610D2925109AB2E1C92CC5383C.avif",
+        "name": "Кисло-сладкий цыпленок",
+        "types": [1],
+        "sizes": [26, 30, 40],
+        "price": 275,
+        "category": 2,
+        "rating": 2
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://media.dodostatic.net/image/r:233x233/11EE7D612FC7B7FCA5BE822752BEE1E5.avif",
+        "name": "Чизбургер-пицца",
+        "types": [0, 1],
+        "sizes": [26, 30, 40],
+        "price": 415,
+        "category": 3,
+        "rating": 8
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://media.dodostatic.net/image/r:233x233/11EE7D614CBE0530B7234B6D7A6E5F8E.avif",
+        "name": "Крэйзи пепперони",
+        "types": [0],
+        "sizes": [26, 30],
+        "price": 580,
+        "category": 2,
+        "rating": 2
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://media.dodostatic.net/image/r:233x233/11EE7D60FDA22358AC33C6A44EB093A2.avif",
+        "name": "Пепперони",
+        "types": [0, 1],
+        "sizes": [26, 30, 40],
+        "price": 675,
+        "category": 1,
+        "rating": 9
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://media.dodostatic.net/image/r:233x233/11EE7D61706D472F9A5D71EB94149304.avif",
+        "name": "Маргарита",
+        "types": [0, 1],
+        "sizes": [26, 40],
+        "price": 450,
+        "category": 4,
+        "rating": 10
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://media.dodostatic.net/image/r:233x233/11EE7D6175C10773BFE36E56D48DF7E3.avif",
+        "name": "Четыре сезона",
+        "types": [0, 1],
+        "sizes": [26, 30, 40],
+        "price": 395,
+        "category": 5,
+        "rating": 10
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://media.dodostatic.net/image/r:233x233/11EE7D6149EB101D8727573088FA2EFF.avif",
+        "name": "Овощи и грибы 🌱",
+        "types": [0, 1],
+        "sizes": [26, 30],
+        "price": 285,
+        "category": 5,
+        "rating": 7
+      }
+    ],
+    "sets": [
+      {
+        "id": 1,
+        "imageUrl": "https://static.setsushi.ru/images/collections/uploads/bg-optim/6d209e7f_optim_bg_e9edf0_w1000.jpg",
+        "name": "Средний сет",
+        "price": 1000,
+        "categories": "Сеты",
+        "count": 30,
+        "weight": 1200
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://static.setsushi.ru/images/collections/uploads/bg-optim/cca19ba9_optim_bg_e9edf0_w1000.jpg",
+        "name": "Малый сет",
+        "price": 800,
+        "categories": "Сеты",
+        "count": 10,
+        "weight": 250
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://static.setsushi.ru/images/collections/uploads/bg-optim/a9dd119c_optim_bg_e9edf0_w1000.jpg",
+        "name": "Сет Ассорти",
+        "price": 2000,
+        "categories": "Сеты",
+        "count": 8,
+        "weight": 230
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://static.setsushi.ru/images/collections/uploads/bg-optim/e0ad3219_optim_bg_e9edf0_w1000.jpg",
+        "name": "Вегетарианский сет",
+        "price": 1200,
+        "categories": "Сеты",
+        "count": 32,
+        "weight": 1300
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://static.setsushi.ru/images/collections/uploads/bg-optim/693f757b_optim_bg_e9edf0_w1000.jpg",
+        "name": "Сет Филадельфия",
+        "price": 1400,
+        "categories": "Сеты",
+        "count": 38,
+        "weight": 1500
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://static.setsushi.ru/images/collections/uploads/bg-optim/2b8261ea_optim_bg_e9edf0_w1000.jpg",
+        "name": "Сет Калифорния",
+        "price": 1300,
+        "categories": "Сеты",
+        "count": 6,
+        "weight": 200
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://static.setsushi.ru/images/collections/uploads/bg-optim/66585dc9_optim_bg_e9edf0_w1000.jpg",
+        "name": "Темпура сет",
+        "price": 1600,
+        "categories": "Сеты",
+        "count": 10,
+        "weight": 400
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://static.setsushi.ru/images/collections/uploads/bg-optim/28e4d460_optim_bg_e9edf0_w1000.jpg",
+        "name": "Сет с угрем",
+        "price": 1500,
+        "categories": "Сеты",
+        "count": 15,
+        "weight": 600
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://static.setsushi.ru/images/collections/uploads/bg-optim/3e3b67a6_optim_bg_e9edf0_w1000.jpg",
+        "name": "Сет Суши",
+        "price": 1800,
+        "categories": "Сеты",
+        "count": 18,
+        "weight": 700
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://static.setsushi.ru/images/collections/uploads/bg-optim/be2a3878_optim_bg_e9edf0_w1000.jpg",
+        "name": "Сет Роллы",
+        "price": 1700,
+        "categories": "Сеты",
+        "count": 23,
+        "weight": 850
+      },
+      {
+        "id": 11,
+        "imageUrl": "https://static.setsushi.ru/images/collections/uploads/bg-optim/05e12475_optim_bg_e9edf0_w1000.jpg",
+        "name": "Большой сет",
+        "price": 1500,
+        "categories": "Сеты",
+        "count": 45,
+        "weight": 2000
+      }
+    ],
+    "sushi": [
+      {
+        "id": 1,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/143-300.jpg",
+        "name": "Дракон",
+        "price": 300,
+        "categories": "Холодные роллы",
+        "ingredients": ["Рис", "Нори", "Сыр", " Угорь", "Угнаги", "Соус"]
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/129-300.jpg",
+        "name": "Калифорния",
+        "price": 350,
+        "categories": "Холодные роллы",
+        "ingredients": ["Рис", "Нори", "Краб", "Авокадо", "Майонез", "Тобико"]
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/152-300.jpg",
+        "name": "Филадельфия",
+        "price": 400,
+        "categories": "Холодные роллы",
+        "ingredients": ["Рис", "Нори", "Лосось", "Сыр", "Авокадо", "Соус"]
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/145-300.jpg",
+        "name": "Темпура",
+        "price": 450,
+        "categories": "Горячие роллы",
+        "ingredients": ["Рис", "Нори", "Креветки", "Сыр", "Авокадо", "Соус"]
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/238-300.jpg",
+        "name": "Вулкан",
+        "price": 500,
+        "categories": "Горячие роллы",
+        "ingredients": ["Рис", "Нори", "Угорь", "Лосось", "Сыр", "Соус"]
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/237-300.jpg",
+        "name": "Сяке маки",
+        "price": 250,
+        "categories": "Холодные роллы",
+        "ingredients": ["Рис", "Нори", "Лосось"]
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/233-300.jpg",
+        "name": "Эби маки",
+        "price": 270,
+        "categories": "Холодные роллы",
+        "ingredients": ["Рис", "Нори", "Креветки"]
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/662-300.jpg",
+        "name": "Каппа маки",
+        "price": 220,
+        "categories": "Холодные роллы",
+        "ingredients": ["Рис", "Нори", "Огурец"]
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/147-300.jpg",
+        "name": "Унаги маки",
+        "price": 280,
+        "categories": "Холодные роллы",
+        "ingredients": ["Рис", "Нори", "Угорь"]
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/136-300.jpg",
+        "name": "Спайси туна",
+        "price": 350,
+        "categories": "Холодные роллы",
+        "ingredients": ["Рис", "Нори", "Тунец", "Соус"]
+      },
+      {
+        "id": 11,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/131-300.jpg",
+        "name": "Спайси лосось",
+        "price": 370,
+        "categories": "Холодные роллы",
+        "ingredients": ["Рис", "Нори", "Лосось", "Соус"]
+      },
+      {
+        "id": 12,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/237-300.jpg",
+        "name": "Дракон",
+        "price": 300,
+        "categories": "Холодные роллы",
+        "ingredients": ["Рис", "Нори", "Сыр", "Угорь", "Угнаги", "Соус"]
+      }
+    ],
+    "wok": [
+      {
+        "id": 1,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/517-300.jpg",
+        "name": "WOK с говядиной и грибами",
+        "price": 400,
+        "categories": "WOK",
+        "ingredients": ["Говядина", "Грибы", "Овощи", "Соус соевый", "Рис"]
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/550-300.jpg",
+        "name": "WOK с креветками и ананасом",
+        "price": 420,
+        "categories": "WOK",
+        "ingredients": [
+          "Креветки",
+          "Ананас",
+          "Овощи",
+          "Соус кисло-сладкий",
+          "Рис"
+        ]
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/518-300.jpg",
+        "name": "WOK с тофу и овощами",
+        "price": 330,
+        "categories": "WOK",
+        "ingredients": ["Тофу", "Овощи", "Соус соевый", "Рис"]
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/522-300.jpg",
+        "name": "WOK с лососем и брокколи",
+        "price": 450,
+        "categories": "WOK",
+        "ingredients": ["Лосось", "Брокколи", "Овощи", "Соус терияки", "Рис"]
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/602-300.jpg",
+        "name": "WOK с уткой и апельсином",
+        "price": 470,
+        "categories": "WOK",
+        "ingredients": ["Утка", "Апельсин", "Овощи", "Соус сладкий", "Рис"]
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/524-300.jpg",
+        "name": "WOK с кальмарами и шпинатом",
+        "price": 420,
+        "categories": "WOK",
+        "ingredients": ["Кальмары", "Шпинат", "Овощи", "Соус соевый", "Рис"]
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/516-300.jpg",
+        "name": "WOK с курицей и грибами шиитаке",
+        "price": 360,
+        "categories": "WOK",
+        "ingredients": [
+          "Курица",
+          "Грибы шиитаке",
+          "Овощи",
+          "Соус соевый",
+          "Рис"
+        ]
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/603-300.jpg",
+        "name": "WOK с говядиной и паприкой",
+        "price": 390,
+        "categories": "WOK",
+        "ingredients": ["Говядина", "Паприка", "Овощи", "Соус терияки", "Рис"]
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/601-300.jpg",
+        "name": "WOK с овощами и кешью",
+        "price": 340,
+        "categories": "WOK",
+        "ingredients": ["Овощи", "Кешью", "Соус сладкий", "Рис"]
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/604-300.jpg",
+        "name": "WOK с курицей и овощами",
+        "price": 350,
+        "categories": "WOK",
+        "ingredients": ["Курица", "Овощи", "Соус терияки", "Рис"]
+      }
+    ],
+    "rolls": [
+      {
+        "id": 1,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/744-300.jpg",
+        "name": "Ролл с тунцом",
+        "price": 280,
+        "categories": "Роллы",
+        "ingredients": ["Рис", "Нори", "Тунец"]
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1462-300.jpg",
+        "name": "Калифорния ролл",
+        "price": 270,
+        "categories": "Роллы",
+        "ingredients": ["Рис", "Нори", "Крабовые палочки", "Авокадо", "Икра"]
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/825-300.jpg",
+        "name": "Филадельфия ролл",
+        "price": 290,
+        "categories": "Роллы",
+        "ingredients": ["Рис", "Нори", "Сыр", "Лосось"]
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1460-300.jpg",
+        "name": "Спайси тунец ролл",
+        "price": 300,
+        "categories": "Роллы",
+        "ingredients": ["Рис", "Нори", "Тунец", "Спайси соус"]
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1461-300.jpg",
+        "name": "Темпура ролл",
+        "price": 320,
+        "categories": "Роллы",
+        "ingredients": ["Рис", "Нори", "Креветки", "Темпура кляр"]
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/851-300.jpg",
+        "name": "Унаги ролл",
+        "price": 310,
+        "categories": "Роллы",
+        "ingredients": ["Рис", "Нори", "Угорь", "Соус унаги"]
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1463-300.jpg",
+        "name": "Авокадо ролл",
+        "price": 240,
+        "categories": "Роллы",
+        "ingredients": ["Рис", "Нори", "Авокадо"]
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/676-300.jpg",
+        "name": "Креветка ролл",
+        "price": 260,
+        "categories": "Роллы",
+        "ingredients": ["Рис", "Нори", "Креветка"]
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/153-300.jpg",
+        "name": "Огурец ролл",
+        "price": 230,
+        "categories": "Роллы",
+        "ingredients": ["Рис", "Нори", "Огурец"]
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/661-300.jpg",
+        "name": "Ролл с лососем",
+        "price": 250,
+        "categories": "Роллы",
+        "ingredients": ["Рис", "Нори", "Лосось"]
+      }
+    ],
+    "salad": [
+      {
+        "id": 1,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/60-300.jpg",
+        "name": "Салат с лососем и киноа",
+        "price": 400,
+        "categories": "Салаты",
+        "ingredients": [
+          "Лосось",
+          "Киноа",
+          "Огурец",
+          "Помидоры",
+          "Соус йогуртовый"
+        ]
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1394-1300.jpg",
+        "name": "Греческий салат",
+        "price": 300,
+        "categories": "Салаты",
+        "ingredients": [
+          "Помидоры",
+          "Огурцы",
+          "Фета",
+          "Оливки",
+          "Оливковое масло",
+          "Орегано"
+        ]
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1393-1300.jpg",
+        "name": "Салат Цезарь",
+        "price": 350,
+        "categories": "Салаты",
+        "ingredients": [
+          "Курица",
+          "Рomaine",
+          "Пармезан",
+          "Гренки",
+          "Соус Цезарь"
+        ]
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/829-300.jpg",
+        "name": "Салат с тунцом и яйцом",
+        "price": 320,
+        "categories": "Салаты",
+        "ingredients": [
+          "Тунец",
+          "Яйцо",
+          "Салатный микс",
+          "Огурец",
+          "Помидоры",
+          "Соус винегрет"
+        ]
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1482-300.jpg",
+        "name": "Салат с курицей и грибами",
+        "price": 340,
+        "categories": "Салаты",
+        "ingredients": [
+          "Курица",
+          "Грибы",
+          "Салатный микс",
+          "Огурцы",
+          "Соус чесночный"
+        ]
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/68-300.jpg",
+        "name": "Салат с козьим сыром и грецкими орехами",
+        "price": 370,
+        "categories": "Салаты",
+        "ingredients": [
+          "Козий сыр",
+          "Грецкие орехи",
+          "Салатный микс",
+          "Груша",
+          "Соус бальзамический"
+        ]
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/714-300.jpg",
+        "name": "Салат с лососем и каперсами",
+        "price": 380,
+        "categories": "Салаты",
+        "ingredients": [
+          "Лосось",
+          "Каперсы",
+          "Огурец",
+          "Салатный микс",
+          "Соус лимонный"
+        ]
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1764-300.jpg",
+        "name": "Салат с бурратой и помидорами",
+        "price": 360,
+        "categories": "Салаты",
+        "ingredients": [
+          "Буррата",
+          "Помидоры",
+          "Базилик",
+          "Оливковое масло",
+          "Соус бальзамический"
+        ]
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/42-300.jpg",
+        "name": "Салат с креветками и манго",
+        "price": 390,
+        "categories": "Салаты",
+        "ingredients": [
+          "Креветки",
+          "Манго",
+          "Салатный микс",
+          "Авокадо",
+          "Соус сладкий"
+        ]
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1395-300.jpg",
+        "name": "Салат с креветками и авокадо",
+        "price": 350,
+        "categories": "Салаты",
+        "ingredients": ["Креветки", "Авокадо", "Салатный микс", "Соус лимонный"]
+      }
+    ],
+    "soup": [
+      {
+        "id": 1,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/700-300.jpg",
+        "name": "Суп с говядиной и овощами",
+        "price": 350,
+        "categories": "Супы",
+        "ingredients": [
+          "Говядина",
+          "Овощи",
+          "Картофель",
+          "Говяжий бульон",
+          "Зелень"
+        ]
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/219-300.jpg",
+        "name": "Том Ям с креветками",
+        "price": 400,
+        "categories": "Супы",
+        "ingredients": [
+          "Креветки",
+          "Лемонграсс",
+          "Лайм",
+          "Чили",
+          "Кокосовое молоко",
+          "Грибы"
+        ]
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/992-300.jpg",
+        "name": "Крем-суп из шампиньонов",
+        "price": 320,
+        "categories": "Супы",
+        "ingredients": [
+          "Шампиньоны",
+          "Сливки",
+          "Лук",
+          "Чеснок",
+          "Куриный бульон"
+        ]
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/833-300.jpg",
+        "name": "Суп-пюре из тыквы",
+        "price": 310,
+        "categories": "Супы",
+        "ingredients": [
+          "Тыква",
+          "Сливки",
+          "Лук",
+          "Чеснок",
+          "Куриный бульон",
+          "Специи"
+        ]
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/832-300.jpg",
+        "name": "Суп с морепродуктами",
+        "price": 420,
+        "categories": "Супы",
+        "ingredients": [
+          "Морепродукты",
+          "Овощи",
+          "Рыбный бульон",
+          "Чеснок",
+          "Зелень"
+        ]
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://e0.edimdoma.ru/data/recipes/0015/3483/153483-ed4_wide.jpg?1720520395",
+        "name": "Борщ",
+        "price": 340,
+        "categories": "Супы",
+        "ingredients": [
+          "Свекла",
+          "Капуста",
+          "Мясо",
+          "Картофель",
+          "Помидоры",
+          "Сметана"
+        ]
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://e0.edimdoma.ru/data/recipes/0015/3044/153044-ed4_wide.jpg?1707320018",
+        "name": "Суп из чечевицы",
+        "price": 330,
+        "categories": "Супы",
+        "ingredients": [
+          "Чечевица",
+          "Овощи",
+          "Лук",
+          "Чеснок",
+          "Куриный бульон",
+          "Специи"
+        ]
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://e3.edimdoma.ru/data/recipes/0015/2794/152794-ed4_wide.jpg?1702040170",
+        "name": "Суп с фрикадельками",
+        "price": 340,
+        "categories": "Супы",
+        "ingredients": ["Фрикадельки", "Овощи", "Картофель", "Бульон", "Зелень"]
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://img1.russianfood.com/dycontent/images_upl/31/sm_30806.jpg",
+        "name": "Суп с лапшой и грибами",
+        "price": 320,
+        "categories": "Супы",
+        "ingredients": ["Лапша", "Грибы", "Овощи", "Куриный бульон", "Зелень"]
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://img1.russianfood.com/dycontent/images_upl/412/sm_411724.jpg",
+        "name": "Суп с курицей и лапшой",
+        "price": 300,
+        "categories": "Супы",
+        "ingredients": ["Курица", "Лапша", "Овощи", "Куриный бульон", "Зелень"]
+      }
+    ],
+    "corndogs": [
+      {
+        "id": 1,
+        "imageUrl": "https://optim.tildacdn.com/stor6637-3736-4164-a666-633537316638/-/format/webp/75632896.jpg",
+        "name": "Корн дог с сыром",
+        "price": 180,
+        "categories": "Корн доги",
+        "ingredients": [
+          "Сосиска",
+          "Кукурузная мука",
+          "Мука",
+          "Сыр",
+          "Яйцо",
+          "Молоко"
+        ]
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://andychef.ru/wp-content/uploads/2019/09/corn.jpg",
+        "name": "Корн дог с беконом",
+        "price": 200,
+        "categories": "Корн доги",
+        "ingredients": [
+          "Сосиска",
+          "Кукурузная мука",
+          "Мука",
+          "Бекон",
+          "Яйцо",
+          "Молоко"
+        ]
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://kitsunecafe.ru/wp-content/uploads/2024/06/4366672a-7c05-417b-a3ef-ebee36367ed0-1.jpg",
+        "name": "Корн дог с чили",
+        "price": 210,
+        "categories": "Корн доги",
+        "ingredients": [
+          "Сосиска",
+          "Кукурузная мука",
+          "Мука",
+          "Чили",
+          "Яйцо",
+          "Молоко"
+        ]
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://kitsunecafe.ru/wp-content/uploads/2024/06/74b75ef8-8c6c-4837-856a-606ddd6ad099-1.jpg",
+        "name": "Корн дог с капустой",
+        "price": 190,
+        "categories": "Корн доги",
+        "ingredients": [
+          "Сосиска",
+          "Кукурузная мука",
+          "Мука",
+          "Капуста",
+          "Яйцо",
+          "Молоко"
+        ]
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://gotovim-doma.ru/images/recipe/b/1c/b1cc27fc5a6058c125332cb26c28c681_l.jpg",
+        "name": "Корн дог с картошкой",
+        "price": 220,
+        "categories": "Корн доги",
+        "ingredients": [
+          "Сосиска",
+          "Кукурузная мука",
+          "Мука",
+          "Картофель",
+          "Яйцо",
+          "Молоко"
+        ]
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDSBt-VKB2oaf61r1DytZPCIIwEzKDoYsFew&s",
+        "name": "Корн дог с соусом BBQ",
+        "price": 230,
+        "categories": "Корн доги",
+        "ingredients": [
+          "Сосиска",
+          "Кукурузная мука",
+          "Мука",
+          "Соус BBQ",
+          "Яйцо",
+          "Молоко"
+        ]
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://png.pngtree.com/png-vector/20240602/ourmid/pngtree-golden-corn-dog-delight-png-image_12607399.png",
+        "name": "Корн дог с чесноком",
+        "price": 170,
+        "categories": "Корн доги",
+        "ingredients": [
+          "Сосиска",
+          "Кукурузная мука",
+          "Мука",
+          "Чеснок",
+          "Яйцо",
+          "Молоко"
+        ]
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-corn-dog-korean-street-food-fast-food-element-png-image_11898832.png",
+        "name": "Корн дог с острым соусом",
+        "price": 210,
+        "categories": "Корн доги",
+        "ingredients": [
+          "Сосиска",
+          "Кукурузная мука",
+          "Мука",
+          "Острый соус",
+          "Яйцо",
+          "Молоко"
+        ]
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://kartinki.pics/uploads/posts/2021-07/1625217717_34-kartinkin-com-p-korn-dog-yeda-krasivo-foto-41.jpg",
+        "name": "Корн дог с ветчиной и сыром",
+        "price": 240,
+        "categories": "Корн доги",
+        "ingredients": [
+          "Сосиска",
+          "Кукурузная мука",
+          "Мука",
+          "Ветчина",
+          "Сыр",
+          "Яйцо",
+          "Молоко"
+        ]
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://kartinki.pibig.info/uploads/posts/2023-04/1682435470_kartinki-pibig-info-p-kartinki-korn-dog-arti-pinterest-54.jpg",
+        "name": "Классический корн дог",
+        "price": 150,
+        "categories": "Корн доги",
+        "ingredients": ["Сосиска", "Кукурузная мука", "Мука", "Яйцо", "Молоко"]
+      }
+    ],
+    "drinks": [
+      {
+        "id": 1,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/446-300.jpg",
+        "name": "Сок апельсиновый",
+        "price": 150,
+        "categories": "Напитки"
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/445-300.jpg",
+        "name": "Лимонад",
+        "price": 140,
+        "categories": "Холодные напитки"
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1776-300.jpg",
+        "name": "Минеральная вода",
+        "price": 100,
+        "categories": "Холодные напитки"
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://askoldtea.com.ua/wp-content/uploads/2021/07/askold_sait_posts_922_922_cold.png",
+        "name": "Чай со льдом",
+        "price": 130,
+        "categories": "Холодные напитки"
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://nerosushi.com.ua/wp-content/themes/yootheme/cache/nero100020-b15529f4.png",
+        "name": "Кофе эспрессо",
+        "price": 180,
+        "categories": "Горячие напитки"
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNC5BzTQn7ZkPJE7L0OHZ8klF8wH0uDDS9Kg&s",
+        "name": "Капучино",
+        "price": 200,
+        "categories": "Горячие напитки"
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/2070-300.jpg",
+        "name": "Напиток PULPY апельсин 0,45л",
+        "price": 190,
+        "categories": "Холодные напитки"
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/418-300.jpg",
+        "name": "Дюшес",
+        "price": 170,
+        "categories": "Холодные напитки"
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1760-300.jpg",
+        "name": "Пиво \"Bud\" б/а 0,45",
+        "price": 220,
+        "categories": "Алкогольные напитки"
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/1857-300.jpg",
+        "name": "Кола",
+        "price": 120,
+        "categories": "Холодные напитки"
+      }
+    ],
+    "combo": [
+      {
+        "id": 1,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/2082-1300.jpg",
+        "name": "Комбо 2: Роллы и напитки",
+        "price": 800,
+        "categories": "Комбо",
+        "items": ["Роллы Филадельфия", "Роллы Спайси", "Капучино", "Лимонад"]
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/819-1300.jpg",
+        "name": "Комбо 3: Вок и напитки",
+        "price": 750,
+        "categories": "Комбо",
+        "items": [
+          "Вок с курицей",
+          "Вок с говядиной",
+          "Минеральная вода",
+          "Чай со льдом"
+        ]
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/733-1300.jpg",
+        "name": "Комбо 4: Корн доги и напитки",
+        "price": 650,
+        "categories": "Комбо",
+        "items": [
+          "Корн дог с сыром",
+          "Корн дог с беконом",
+          "Кола",
+          "Сок апельсиновый"
+        ]
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/819-1300.jpg",
+        "name": "Комбо 5: Суп и салат",
+        "price": 600,
+        "categories": "Комбо",
+        "items": [
+          "Суп с курицей и лапшой",
+          "Суп крем из шампиньонов",
+          "Салат с креветками",
+          "Напиток"
+        ]
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/812-1300.jpg",
+        "name": "Комбо 6: Суши и роллы",
+        "price": 850,
+        "categories": "Комбо",
+        "items": [
+          "Суши с креветкой",
+          "Роллы Филадельфия",
+          "Соевый соус",
+          "Имбирь"
+        ]
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/812-1300.jpg",
+        "name": "Комбо 7: Вок и корн доги",
+        "price": 700,
+        "categories": "Комбо",
+        "items": ["Вок с курицей", "Корн дог с сыром", "Картошка фри", "Кола"]
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/966-1300.jpg",
+        "name": "Комбо 8: Роллы и суп",
+        "price": 740,
+        "categories": "Комбо",
+        "items": ["Роллы Спайси", "Суп-пюре из тыквы", "Имбирь", "Соевый соус"]
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/838-1300.jpg",
+        "name": "Комбо 9: Суши и салат",
+        "price": 670,
+        "categories": "Комбо",
+        "items": ["Суши с тунцом", "Салат с авокадо", "Соевый соус", "Имбирь"]
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/837-1300.jpg",
+        "name": "Комбо 10: Суп и десерт",
+        "price": 620,
+        "categories": "Комбо",
+        "items": ["Суп с фрикадельками", "Десерт Наполеон", "Напиток", "Салат"]
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://static.pizzasushiwok.ru/images/menu_new/812-1300.jpg",
+        "name": "Комбо 1: Суши и напитки",
+        "price": 720,
+        "categories": "Комбо",
+        "items": ["Суши с лососем", "Суши с тунцом", "Кола", "Сок яблочный"]
+      }
+    ]
+  }
 }
