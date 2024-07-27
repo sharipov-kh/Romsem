@@ -14,6 +14,7 @@ import Combo from "./Routes/Combo";
 import Promotion from "./Routes/Promotion";
 import Main from "./Routes/Main";
 import Product from "../../Product/Product";
+import Reviews from "./Routes/reviews/Reviews";
 
 const Content = () => {
   return (
@@ -21,7 +22,7 @@ const Content = () => {
       <Header />
       <div className={styles.container}>
         <Routes>
-          <Route path="/Romsem" element={<Main />} />
+          <Route path="/" element={<Main />} />
           <Route path="/pizza" element={<Pizza />} />
           <Route path="/sushi" element={<Sushi />} />
           <Route path="/sets" element={<Sets />} />
@@ -33,6 +34,7 @@ const Content = () => {
           <Route path="/drinks" element={<Drinks />} />
           <Route path="/combo" element={<Combo />} />
           <Route path="/promotion" element={<Promotion />} />
+          <Route path="/reviews" element={<Reviews />} />
           <Route path={'/:path/product/:id'} element={<Product />} />
         </Routes>
       </div>

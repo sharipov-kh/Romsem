@@ -1,0 +1,30 @@
+.Card__sizes {
+  cursor: pointer;
+  ul {
+    display: flex;
+    width: 100%;
+    background: #f2f2f2;
+    padding: 4px;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    li {
+      border-radius: 25px;
+      padding: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.active {
+  transition: background 0.3s ease-in-out;
+  background: #fc6431;
+  color: #fff;
+}

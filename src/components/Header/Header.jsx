@@ -107,7 +107,7 @@ const Header = () => {
       <div className={styles.header__right}>
         <ul className={styles.header__nav}>
           <li className={styles.nav__item}>
-            <Link>Отзывы</Link>
+            <Link to='/reviews'>Отзывы</Link>
           </li>
           <li className={styles.nav__item}>
             <Link>Доставка и оплата</Link>

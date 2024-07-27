@@ -2,7 +2,7 @@ import styles from "./Cart.module.scss";
 
  const Cart = (props) => {
   return (
-    <div>
+    <div className={styles.Cart}>
       
     </div>   
   );   

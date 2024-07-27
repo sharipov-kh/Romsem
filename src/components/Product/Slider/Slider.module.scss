@@ -1,0 +1,35 @@
+.SwiperSlide {
+  padding-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .Slide__image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  .Slide__name h3 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+  }
+  .Slide__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      color: #000;
+    }
+    .Slide__add {
+      background: #f46d40;
+      width: 30px;height: 30px;
+      color: #fff;
+      font-size: 30px;
+      border-radius: 50%;
+    }
+  }
+}

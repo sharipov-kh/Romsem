@@ -1,8 +1,7 @@
-import { useState } from "react";
-
 import styles from "./Card.module.scss";
 import Button from "../../../UI/Button/Button";
 import { Link } from "react-router-dom";
+import PizzaSize from "./pizzaSize/pizzaSize";
 
 const Card = ({
   image,
@@ -16,11 +15,7 @@ const Card = ({
   weight,
   id,
 }) => {
-  const [activeIndex, setActiveIndex] = useState(26);
 
-  const onBtnclick = (size) => {
-    setActiveIndex(size);
-  };
   return (
     <div className={styles.Card}>
       <Link to={`/${path}/product/${id}`}>
@@ -33,19 +28,7 @@ const Card = ({
           <p>{name}</p>
         </div>
         {path === "pizza" ? (
-          <div className={styles.Card__sizes}>
-            <ul>
-              {sizes.map((size, index) => (
-                <li
-                  key={index}
-                  className={`${activeIndex === size ? styles.active : ""}`}
-                  onClick={() => onBtnclick(size)}
-                >
-                  <span>{size}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <PizzaSize sizes={sizes}/>
         ) : path === "drinks" ? (
           <div className={styles.categories}>
             <p>{categories}</p>

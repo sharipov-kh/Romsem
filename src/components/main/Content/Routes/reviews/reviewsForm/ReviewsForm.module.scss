@@ -1,0 +1,80 @@
+.ReviewsForm {
+  background: #fff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  ._form__reviews {
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    textarea {
+      max-width: 100%;
+      min-width: 100%;
+      height: 100px;
+      max-height: 100px;
+      min-height: 100px;
+      margin-top: 5px;
+      background: transparent;
+      padding: 5px 10px;
+      border-radius: 5px;
+      line-height: 28px;
+
+      border: 1px solid #333;
+    }
+    .error {
+      border: 1px solid red;
+      background: rgba(255, 75, 75, 0.37);
+      color: white;
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+  ._form__name {
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    input {
+      width: 100%;
+      background: transparent;
+      padding: 5px 10px;
+      border-radius: 5px;
+
+      border: 1px solid #333;
+    }
+    .error {
+      border: 1px solid red;
+      background: rgba(255, 75, 75, 0.37);
+      color: white;
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+  ._form__button {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 20px;
+  }
+}
+
+.errorName {
+  font-size: 14px;
+  color: red;
+}
+
+.errorText {
+  font-size: 14px;
+  color: red;
+}

@@ -8,3 +8,14 @@
   flex-grow: 1;
   background-color: #f2f2f2;
 }
+
+.swiper-button-next, .swiper-button-prev{
+  color: #fff !important;
+  background: #f46d40 !important;
+  width: 45px !important;height: 45px !important;
+  border-radius: 50% !important;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 25px;
+}
