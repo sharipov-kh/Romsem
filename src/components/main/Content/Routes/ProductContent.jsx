@@ -6,7 +6,6 @@ import Card from "../Card/Card";
 import Loading from "../../../UI/Loader/Loading";
 import SortItem from "./SortItem";
 
-
 const ProductContent = ({ path, title, icon }) => {
   const [product, setProduct] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -91,6 +90,8 @@ const ProductContent = ({ path, title, icon }) => {
                 })
                 .map((item) => (
                   <Card
+                    item={item}
+                    priceSize={item.priceSize}
                     key={item.id}
                     id={item.id}
                     image={item.imageUrl}

@@ -30,11 +30,13 @@ const Review = () => {
           <Button onClick={addReviewHandler}>+ Добавить отзыв</Button>
         </div>
       </div>
-      {add && (
+      {add ? (
         <ReviewsForm
           cancelReviewHandler={cancelReviewHandler}
           setAdd={setAdd}
         />
+      ) : (
+        ""
       )}
       <div className={styles.review__content}>
         <ul className={styles.content__list}>

@@ -1,30 +1,34 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import styles from "./Product.module.scss";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import prevBtn from "../../assets/Icon/product/prevBtn.svg";
-import Button from "../UI/Button/Button";
+import ButtonAddToCart from "../UI/Button/ButtonAddToCart";
 import Counter from "./Counter/Counter";
 import PizzaSize from "../main/Content/Card/pizzaSize/pizzaSize";
 import Slider from "./Slider/Slider";
 
 const Product = () => {
+  const { pathname } = useLocation();
   const { path, id } = useParams();
   const [product, setProduct] = useState([]);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     (async () => {
       await axios(`http://localhost:8080/${path}/${id}`).then(({ data }) =>
         setProduct(data)
       );
+      window.scrollTo(0, 0);
     })();
-  }, []);
+  }, [id, path, pathname]);
 
   return (
     <div className={styles.Product}>
       <div className={styles.Product__navigation}>
-        <Link to=":path">
-          <button onClick={() => window.history.back()}>
+        <Link>
+          <button onClick={() => navigate(-1)}>
             <img src={prevBtn} alt="prevBtn" /> Назад
           </button>
         </Link>
@@ -37,7 +41,7 @@ const Product = () => {
           <div className={styles.info__name}>
             <h2>{product.name}</h2>
           </div>
-          <Counter price={product.price} />
+          <Counter item={product} />
           <div className={styles.info__description}>
             {path !== "pizza" && path !== "sets" && path !== "drinks" ? (
               <>
@@ -70,7 +74,7 @@ const Product = () => {
             )}
           </div>
           <div className={styles.info__button}>
-            <Button>Хочу!</Button>
+            <ButtonAddToCart item={product}>Хочу!</ButtonAddToCart>
           </div>
         </div>
       </div>
@@ -78,7 +82,7 @@ const Product = () => {
         <div className={styles.Slider__title}>
           <h1>Рекомендуем к этому товару</h1>
         </div>
-        <Slider></Slider>
+        <Slider NumArr={7}></Slider>
       </div>
     </div>
   );

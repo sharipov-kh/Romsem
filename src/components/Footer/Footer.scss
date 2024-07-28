@@ -1,0 +1,53 @@
+.footer {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-top: 1px solid #a4acad;
+  padding: 0 30px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .container .item {
+  padding: 10px 20px;
+  margin-top: 20px;
+  &:not(:first-child) {
+    border-left: 1px solid #a4acad;
+  }
+}
+
+.footer .container .item p {
+  margin-top: 10px;
+}
+
+.footer .container .item #phone {
+  display: block;
+  margin-top: 10px;
+  padding: 7px 10px;
+  padding-left: 0;
+  border-radius: 7px;
+  background: transparent;
+  font-size: 17px;
+  font-weight: bold;
+  color: #a4acad;
+}
+
+.footer .container .item #phone::placeholder {
+  color: #a4acad;
+}
+
+.footer .container .item #nomerTell {
+  color: #000;
+  font-weight: bold;
+}
+
+.footer .container .item2 p {
+  color: #a4acad;
+}
+
+.footer .container .item1 p {
+  font-weight: 600;
+}

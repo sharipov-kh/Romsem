@@ -1,14 +1,14 @@
 import styles from "./SideBar.module.scss";
 import logo from "../../../assets/Home/Logo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
   return (
     <div className={styles.sideBar}>
       <div className={styles.logo}>
-        <Link to="/">
+        <NavLink to="/">
           <img src={logo} alt="logo" />
-        </Link>
+        </NavLink>
       </div>
       <nav className={styles.home__sideBar}>
         <ul>
@@ -117,9 +117,9 @@ const SideBar = () => {
                 fill="#A4ACAD"
               />
             </svg>
-            <Link className={styles["home__sideBar-link"]} to="/pizza">
+            <NavLink className={styles["home__sideBar-link"]} to="/pizza">
               <span>Пицца</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
             <svg
@@ -138,9 +138,9 @@ const SideBar = () => {
               <circle cx="21.2667" cy="23.2" r="3.36667" stroke="#A4ACAD" />
               <circle cx="21.2667" cy="23.2" r="0.966667" fill="#A4ACAD" />
             </svg>
-            <Link className={styles["home__sideBar-link"]} to="/sets">
+            <NavLink className={styles["home__sideBar-link"]} to="/sets">
               <span>Сеты</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
             <svg
@@ -163,9 +163,9 @@ const SideBar = () => {
                 fill="#A4ACAD"
               />
             </svg>
-            <Link className={styles["home__sideBar-link"]} to="/wok">
+            <NavLink className={styles["home__sideBar-link"]} to="/wok">
               <span>WOK</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
             <svg
@@ -201,9 +201,9 @@ const SideBar = () => {
                 
               </defs>
             </svg>
-            <Link className={styles["home__sideBar-link"]} to="/rolls">
+            <NavLink className={styles["home__sideBar-link"]} to="/rolls">
               <span>Роллы</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
             <svg
@@ -239,9 +239,9 @@ const SideBar = () => {
                
               </defs>
             </svg>
-            <Link className={styles["home__sideBar-link"]} to="/sushi">
+            <NavLink className={styles["home__sideBar-link"]} to="/sushi">
               <span>Суши</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
             <svg
@@ -273,9 +273,9 @@ const SideBar = () => {
                
               </defs>
             </svg>
-            <Link className={styles["home__sideBar-link"]} to="/salad">
+            <NavLink className={styles["home__sideBar-link"]} to="/salad">
               <span>Салаты</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
             <svg
@@ -290,9 +290,9 @@ const SideBar = () => {
                 fill="#A4ACAD"
               />
             </svg>
-            <Link className={styles["home__sideBar-link"]} to="/soup">
+            <NavLink className={styles["home__sideBar-link"]} to="/soup">
               <span>Супы</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
             <svg
@@ -328,9 +328,9 @@ const SideBar = () => {
              
               </defs>
             </svg>
-            <Link className={styles["home__sideBar-link"]} to="/corndogs">
+            <NavLink className={styles["home__sideBar-link"]} to="/corndogs">
               <span>Корн доги</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
             <svg
@@ -361,9 +361,9 @@ const SideBar = () => {
                 fill="#A4ACAD"
               />
             </svg>
-            <Link className={styles["home__sideBar-link"]} to="/drinks">
+            <NavLink className={styles["home__sideBar-link"]} to="/drinks">
               <span>Напитки</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
             <svg
@@ -390,9 +390,9 @@ const SideBar = () => {
                 fill="#A4ACAD"
               />
             </svg>
-            <Link className={styles["home__sideBar-link"]} to="/promotion">
+            <NavLink className={styles["home__sideBar-link"]} to="/promotion">
               <span>Акции</span>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

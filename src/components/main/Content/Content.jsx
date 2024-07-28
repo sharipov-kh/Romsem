@@ -12,9 +12,10 @@ import CornDog from "./Routes/CornDog";
 import Drinks from "./Routes/Drinks";
 import Combo from "./Routes/Combo";
 import Promotion from "./Routes/Promotion";
-import Main from "./Routes/Main";
+import Main from "./Routes/Main/Main";
 import Product from "../../Product/Product";
 import Reviews from "./Routes/reviews/Reviews";
+import ContentLoyaut from "./ContentLayout/ContentLoyaut";
 
 const Content = () => {
   return (
@@ -22,20 +23,22 @@ const Content = () => {
       <Header />
       <div className={styles.container}>
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/pizza" element={<Pizza />} />
-          <Route path="/sushi" element={<Sushi />} />
-          <Route path="/sets" element={<Sets />} />
-          <Route path="/wok" element={<Wok />} />
-          <Route path="/rolls" element={<Rolls />} />
-          <Route path="/salad" element={<Salad />} />
-          <Route path="/soup" element={<Soup />} />
-          <Route path="/corndogs" element={<CornDog />} />
-          <Route path="/drinks" element={<Drinks />} />
-          <Route path="/combo" element={<Combo />} />
-          <Route path="/promotion" element={<Promotion />} />
-          <Route path="/reviews" element={<Reviews />} />
-          <Route path={'/:path/product/:id'} element={<Product />} />
+          <Route path="/" element={<ContentLoyaut />}>
+            <Route path="" element={<Main />} />
+            <Route path="pizza" element={<Pizza />} />
+            <Route path="sushi" element={<Sushi />} />
+            <Route path="sets" element={<Sets />} />
+            <Route path="wok" element={<Wok />} />
+            <Route path="rolls" element={<Rolls />} />
+            <Route path="salad" element={<Salad />} />
+            <Route path="soup" element={<Soup />} />
+            <Route path="corndogs" element={<CornDog />} />
+            <Route path="drinks" element={<Drinks />} />
+            <Route path="combo" element={<Combo />} />
+            <Route path="promotion" element={<Promotion />} />
+            <Route path={":path/product/:id"} element={<Product />} />
+            <Route path="reviews" element={<Reviews />} />
+          </Route>
         </Routes>
       </div>
     </div>

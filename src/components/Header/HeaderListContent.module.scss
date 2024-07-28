@@ -40,9 +40,15 @@
         .search__item-text {
           flex-grow: 1;
           .item__text-name {
-            font-weight: 500;
-            font-size: 24px;
-            color: #000;
+            ._text-name {
+              font-weight: 500;
+              font-size: 24px;
+              color: #000;
+              &:hover{
+                text-decoration:underline;
+              }
+              
+            }
           }
           .item__text-description {
             font-weight: 400;

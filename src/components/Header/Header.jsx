@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import HeaderListContent from "./HeaderListContent";
 import axios from "axios";
+import { AppContext } from "../../store/AppContext";
 
 const Header = () => {
+  const { openCart } = useContext(AppContext);
   const [search, setSearch] = useState(false);
   const valueInput = useRef(null);
   const [all, setAll] = useState([]);
@@ -107,10 +109,13 @@ const Header = () => {
       <div className={styles.header__right}>
         <ul className={styles.header__nav}>
           <li className={styles.nav__item}>
-            <Link to='/reviews'>Отзывы</Link>
+            <NavLink to="/reviews">Отзывы</NavLink>
           </li>
           <li className={styles.nav__item}>
-            <Link>Доставка и оплата</Link>
+            <NavLink to="/order">Доставка и оплата</NavLink>
+          </li>
+          <li onClick={openCart} className={styles.nav__item}>
+            Корзина
           </li>
         </ul>
         <div className={styles.header__search}>
@@ -146,9 +151,15 @@ const Header = () => {
             </svg>
           </button>
         </div>
-        {valueInput.current && valueInput.current.value.length > 0 ? (
-          <HeaderListContent allDB={all} />
-        ) : null}
+        {search && all.length ? (
+          <HeaderListContent
+            setSearch={setSearch}
+            setAll={setAll}
+            allDB={all}
+          />
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

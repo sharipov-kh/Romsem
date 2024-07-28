@@ -40,8 +40,9 @@ const ReviewsForm = ({ cancelReviewHandler, setAdd }) => {
             },
             pattern: {
               value: /^[A-ZА-ЯЁ][a-zа-яё]+$/,
-              message: 'Имя должно начинаться с заглавной буквы и содержать только буквы'
-            }
+              message:
+                "Имя должно начинаться с заглавной буквы и содержать только буквы",
+            },
           })}
           placeholder="Ваше Имя"
           type="text"

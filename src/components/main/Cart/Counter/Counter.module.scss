@@ -1,0 +1,33 @@
+.info__counter {
+  display: flex;
+  align-items: center;
+  .counter__box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .counter__minus button,
+    .counter__plus button {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      font-size: 20px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background: #f46d40;
+      color: #fff;
+      border-radius: 50%;
+    }
+    .counter__minus .disable {
+      background: transparent;
+      color: #000;
+      cursor: no-drop;
+      margin-top: -7px;
+    }
+    .counter__content {
+      font-weight: 700;
+      font-size: 20px;
+      color: #000;
+    }
+  }
+}
