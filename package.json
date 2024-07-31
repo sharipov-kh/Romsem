@@ -2,7 +2,6 @@
   "name": "romsem",
   "private": true,
   "version": "0.0.0",
-  "proxy": "http://localhost:8080/",
   "type": "module",
   "homepage": "https://sharipov-kh.github.io/Romsem",
   "scripts": {

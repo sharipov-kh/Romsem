@@ -24,20 +24,20 @@ const Content = () => {
       <Header />
       <div className={styles.container}>
         <Routes>
-          <Route path="/Romsem" element={<ContentLoyaut />}>
-            <Route path="Romsem" element={<Main />} />
-            <Route path="/Romsem/pizza" element={<Pizza />} />
-            <Route path="/Romsem/sushi" element={<Sushi />} />
-            <Route path="/Romsem/sets" element={<Sets />} />
-            <Route path="/Romsem/wok" element={<Wok />} />
-            <Route path="/Romsem/rolls" element={<Rolls />} />
-            <Route path="/Romsem/salad" element={<Salad />} />
-            <Route path="/Romsem/soup" element={<Soup />} />
-            <Route path="/Romsem/corndogs" element={<CornDog />} />
-            <Route path="/Romsem/drinks" element={<Drinks />} />
-            <Route path="/Romsem/combo" element={<Combo />} />
-            <Route path="/Romsem/promotion" element={<Promotion />} />
-            <Route path={"/Romsem/:path/product/:id"} element={<Product />} />
+          <Route path="/" element={<ContentLoyaut />}>
+            <Route path="" element={<Main />} />
+            <Route path="pizza" element={<Pizza />} />
+            <Route path="sushi" element={<Sushi />} />
+            <Route path="sets" element={<Sets />} />
+            <Route path="wok" element={<Wok />} />
+            <Route path="rolls" element={<Rolls />} />
+            <Route path="salad" element={<Salad />} />
+            <Route path="soup" element={<Soup />} />
+            <Route path="corndogs" element={<CornDog />} />
+            <Route path="drinks" element={<Drinks />} />
+            <Route path="combo" element={<Combo />} />
+            <Route path="promotion" element={<Promotion />} />
+            <Route path={":path/product/:id"} element={<Product />} />
             <Route path="reviews" element={<Reviews />} />
           </Route>
         </Routes>
