@@ -25,7 +25,7 @@ const Content = () => {
       <div className={styles.container}>
         <Routes>
           <Route path="/Romsem" element={<ContentLoyaut />}>
-            <Route path="Romsem" element={<Main />} />
+            <Route path="Romsem/" element={<Main />} />
             <Route path="/Romsem/pizza" element={<Pizza />} />
             <Route path="/Romsem/sushi" element={<Sushi />} />
             <Route path="/Romsem/sets" element={<Sets />} />
