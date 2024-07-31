@@ -1,40 +1,29 @@
-.info__counter {
+.counter__box {
   display: flex;
   align-items: center;
-  column-gap: 30px;
-  margin: 25px 0;
-  .counter__price {
-    font-weight: 700;
-    font-size: 24px;
-    color: #000;
-  }
-  .counter__box {
+  gap: 20px;
+  .counter__minus button,
+  .counter__plus button {
+    width: 40px;
+    height: 40px;
     display: flex;
+    font-size: 40px;
     align-items: center;
-    gap: 20px;
-    .counter__minus button,
-    .counter__plus button {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      font-size: 40px;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      background: #f46d40;
-      color: #fff;
-      border-radius: 50%;
-    }
-    .counter__minus .disable {
-      background: transparent;
-      color: #000;
-      cursor: no-drop;
-      margin-top: -7px;
-    }
-    .counter__content {
-      font-weight: 700;
-      font-size: 36px;
-      color: #000;
-    }
+    justify-content: center;
+    cursor: pointer;
+    background: #f46d40;
+    color: #fff;
+    border-radius: 50%;
+  }
+  .counter__minus .disable {
+    background: transparent;
+    color: #000;
+    cursor: no-drop;
+    margin-top: -7px;
+  }
+  .counter__content {
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
   }
 }

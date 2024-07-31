@@ -1,18 +1,26 @@
 import styles from "./pizzaSize.module.scss";
 
-const PizzaSize = ({ sizes, activeIndex, setActiveIndex }) => {
-  const onBtnclick = (size) => {
-    setActiveIndex(size);
-  };
-
+const PizzaSize = ({
+  sizes,
+  activeIndex,
+  onBtnclick,
+  pizzaSize,
+  setPizzaSize,
+}) => {
   return (
     <div className={styles.Card__sizes}>
       <ul>
-        {sizes?.map((size, index) => (
+        {sizes.map((size, index) => (
           <li
             key={index}
-            className={`${activeIndex === size ? styles.active : ""}`}
-            onClick={() => onBtnclick(size)}
+            className={activeIndex === size ? styles.active : ""}
+            onClick={() => {
+              onBtnclick(size);
+              setPizzaSize({
+                ...pizzaSize,
+                size: size,
+              });
+            }}
           >
             <span>{size}</span>
           </li>

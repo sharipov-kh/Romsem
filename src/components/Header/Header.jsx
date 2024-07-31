@@ -4,6 +4,7 @@ import { useContext, useRef, useState } from "react";
 import HeaderListContent from "./HeaderListContent";
 import axios from "axios";
 import { AppContext } from "../../store/AppContext";
+import React from "react" 
 
 const Header = () => {
   const { openCart } = useContext(AppContext);

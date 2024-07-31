@@ -1,17 +1,16 @@
 import { useContext } from "react";
 import { AppContext } from "../../../store/AppContext";
-
 import styles from "./Button.module.scss";
 
-const ButtonAddToCart = (props) => {
+const ButtonAddToCart = ({ item, type, children }) => {
   const { addToCart } = useContext(AppContext);
   return (
     <button
       className={styles.button}
-      onClick={() => addToCart(props.item)}
-      type={props.type || "button"}
+      onClick={() => addToCart(item)}
+      type={type || "button"}
     >
-      {props.children}
+      {children}
     </button>
   );
 };

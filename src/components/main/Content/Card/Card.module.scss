@@ -36,7 +36,7 @@
         color: #000;
       }
     }
-    
+
     .Card__action {
       display: flex;
       justify-content: space-between;
@@ -67,4 +67,15 @@
   color: #a4acad;
   font-size: 18px;
   margin: 10px 0;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  li {
+    list-style:disc;
+    color: #a4acad;
+    font-size: 18px;
+  }
 }

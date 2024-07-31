@@ -2,9 +2,10 @@ import { useContext, useEffect } from "react";
 import styles from "./Cart.module.scss";
 import { AppContext } from "../../../store/AppContext";
 import Counter from "./Counter/Counter";
+import React from "react" 
 
 const Cart = () => {
-  const { open, openCart, cart,onDeleteItem } = useContext(AppContext);
+  const { open, openCart, cart, onDeleteItem } = useContext(AppContext);
 
   useEffect(() => {
     document.body.classList.toggle("active__body", open);
@@ -41,10 +42,22 @@ const Cart = () => {
                       </div>
                       <div className={styles._item__action}>
                         <Counter item={item}></Counter>
-                        <span>{item.price * item.count} Сом</span>
+                        <span>
+                          {item.path === "pizza" && item.size === 26
+                            ? item.price * item.count
+                            : item.path === "pizza" && item.size === 30
+                            ? item.priceMiddle * item.count
+                            : item.path === "pizza" && item.size === 40
+                            ? item.priceLarge * item.count
+                            : item.price * item.count}
+                          Сом
+                        </span>
                       </div>
                     </div>
-                    <button onClick={() => onDeleteItem(item)} className={styles.cart__delete}>
+                    <button
+                      onClick={() => onDeleteItem(item)}
+                      className={styles.cart__delete}
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -83,7 +96,17 @@ const Cart = () => {
               <div className={styles.total__left}>
                 <pre>
                   {cart.reduce((acc, rec) => {
-                    return acc + rec.price * rec.count;
+                    return (
+                      acc +
+                      (rec.path === "pizza" && rec.size === 26
+                        ? rec.price * rec.count
+                        : rec.path === "pizza" && rec.size === 30
+                        ? rec.priceMiddle * rec.count
+                        : rec.path === "pizza" && rec.size === 40
+                        ? rec.priceLarge * rec.count
+                        : rec.price) *
+                        rec.count
+                    );
                   }, 0)}{" "}
                   Сом
                 </pre>

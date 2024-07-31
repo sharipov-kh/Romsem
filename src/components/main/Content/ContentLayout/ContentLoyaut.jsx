@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../../../Footer/Footer";
-
-const ContentLoyaut = (props) => {
+import React from "react";
+const ContentLoyaut = () => {
   return (
     <>
       <Outlet />

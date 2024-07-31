@@ -1,7 +1,7 @@
 import styles from "./SideBar.module.scss";
 import logo from "../../../assets/Home/Logo.png";
 import { NavLink } from "react-router-dom";
-
+import React from "react";
 const SideBar = () => {
   return (
     <div className={styles.sideBar}>
@@ -197,9 +197,7 @@ const SideBar = () => {
                   fill="#A4ACAD"
                 />
               </g>
-              <defs>
-                
-              </defs>
+              <defs></defs>
             </svg>
             <NavLink className={styles["home__sideBar-link"]} to="/rolls">
               <span>Роллы</span>
@@ -235,9 +233,7 @@ const SideBar = () => {
                   fill="#A4ACAD"
                 />
               </g>
-              <defs>
-               
-              </defs>
+              <defs></defs>
             </svg>
             <NavLink className={styles["home__sideBar-link"]} to="/sushi">
               <span>Суши</span>
@@ -269,9 +265,7 @@ const SideBar = () => {
                   fill="#A4ACAD"
                 />
               </g>
-              <defs>
-               
-              </defs>
+              <defs></defs>
             </svg>
             <NavLink className={styles["home__sideBar-link"]} to="/salad">
               <span>Салаты</span>
@@ -324,9 +318,7 @@ const SideBar = () => {
                   fill="#A4ACAD"
                 />
               </g>
-              <defs>
-             
-              </defs>
+              <defs></defs>
             </svg>
             <NavLink className={styles["home__sideBar-link"]} to="/corndogs">
               <span>Корн доги</span>

@@ -6,13 +6,15 @@ import Cart from "./components/main/Cart/Cart";
 
 const App = () => {
   return (
-    <div className="main">
+    <>
+      <div className="main">
         <SideBar />
         <div className="content">
           <Home />
         </div>
         <Cart />
-    </div>
+      </div>
+    </>
   );
 };
 

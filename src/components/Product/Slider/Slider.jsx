@@ -4,15 +4,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 import styles from "./Slider.module.scss";
 import { useContext, useEffect, useState } from "react";
-
+import ContentLoader from "react-content-loader";
 import axios from "axios";
-
 import { Link, useParams } from "react-router-dom";
-
 import { useRandom } from "../../../hooks/useRandomArr";
 import { AppContext } from "../../../store/AppContext";
 
 const Slider = ({ NumArr }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
+
   const { path, id } = useParams();
   const [slide, setSlide] = useState([]);
   const { getRandomItems } = useRandom();
@@ -46,8 +50,25 @@ const Slider = ({ NumArr }) => {
         <SwiperSlide key={index}>
           <div className={styles.SwiperSlide}>
             <div className={styles.Slide__image}>
+              {isLoading && (
+                <ContentLoader
+                  speed={3}
+                  width={200}
+                  height={200}
+                  viewBox="0 0 200 200"
+                  backgroundColor="#e8e8e8"
+                  foregroundColor="#d6d6d6"
+                >
+                  <circle cx="100" cy="100" r="100" />
+                </ContentLoader>
+              )}
               <Link to={`/${item.path}/product/${item.id}`}>
-                <img src={item.imageUrl} alt={item.name} />
+                <img
+                  src={item.imageUrl}
+                  style={{ display: isLoading ? "none" : "block" }}
+                  alt={item.name}
+                  onLoad={handleImageLoad}
+                />
               </Link>
             </div>
             <div className={styles.Slide__name}>

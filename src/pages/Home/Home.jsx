@@ -1,10 +1,7 @@
-import styles from "./Home.module.scss";
 import Content from "../../components/main/Content/Content";
-
+import React from "react";
 const Home = () => {
-  return (
-      <Content />
-  );
+  return <Content />;
 };
 
 export default Home;

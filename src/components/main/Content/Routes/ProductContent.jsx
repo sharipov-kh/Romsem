@@ -91,7 +91,6 @@ const ProductContent = ({ path, title, icon }) => {
                 .map((item) => (
                   <Card
                     item={item}
-                    priceSize={item.priceSize}
                     key={item.id}
                     id={item.id}
                     image={item.imageUrl}

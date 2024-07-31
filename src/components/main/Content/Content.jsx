@@ -16,6 +16,7 @@ import Main from "./Routes/Main/Main";
 import Product from "../../Product/Product";
 import Reviews from "./Routes/reviews/Reviews";
 import ContentLoyaut from "./ContentLayout/ContentLoyaut";
+import React from "react"; 
 
 const Content = () => {
   return (

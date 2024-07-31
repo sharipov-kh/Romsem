@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import React from "react" 
 import styles from "./Review.module.scss";
 import Button from "../../../../UI/Button/Button";
 import ReviewsForm from "./reviewsForm/ReviewsForm";
