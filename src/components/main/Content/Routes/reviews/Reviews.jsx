@@ -17,7 +17,7 @@ const Review = () => {
   };
 
   useEffect(() => {
-    axios("http://localhost:8080/reviews").then(({ data }) => setReviews(data));
+    axios("https://romsem-omega.vercel.app/api/reviews").then(({ data }) => setReviews(data));
   }, [review, setReviews]);
 
   return (

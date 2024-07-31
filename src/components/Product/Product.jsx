@@ -14,8 +14,8 @@ const Product = () => {
 
   useEffect(() => {
     (async () => {
-      await axios(`http://localhost:8080/${path}/${id}`).then(({ data }) =>
-        setProduct(data)
+      await axios(`https://romsem-omega.vercel.app/api/${path}/${id}`).then(
+        ({ data }) => setProduct(data)
       );
       window.scrollTo(0, 0);
     })();
@@ -30,7 +30,7 @@ const Product = () => {
           </button>
         </Link>
       </div>
-      
+
       <ProductContainer item={product} />
 
       <div className={styles.Slider}>

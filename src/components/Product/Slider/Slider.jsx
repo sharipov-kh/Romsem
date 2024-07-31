@@ -26,7 +26,9 @@ const Slider = ({ NumArr }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data } = await axios.get("http://localhost:8080/all");
+        const { data } = await axios.get(
+          "https://romsem-omega.vercel.app/api/all"
+        );
         const flattenedData = Object.values(data).reduce((acc, rec) => {
           return [...acc, ...rec];
         }, []);

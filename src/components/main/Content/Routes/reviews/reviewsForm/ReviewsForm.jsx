@@ -23,7 +23,7 @@ const ReviewsForm = ({ cancelReviewHandler, setAdd }) => {
 
   const addReview = (data) => {
     axios
-      .post("http://localhost:8080/reviews", data)
+      .post("https://romsem-omega.vercel.app/api/reviews", data)
       .then(reset(), setAdd(false));
   };
 

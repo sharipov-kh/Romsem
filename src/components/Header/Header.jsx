@@ -4,7 +4,7 @@ import { useContext, useRef, useState } from "react";
 import HeaderListContent from "./HeaderListContent";
 import axios from "axios";
 import { AppContext } from "../../store/AppContext";
-import React from "react" 
+import React from "react";
 
 const Header = () => {
   const { openCart } = useContext(AppContext);
@@ -14,7 +14,7 @@ const Header = () => {
   const onClickBtnSearchHendle = () => setSearch(!search);
 
   const onSearchInputHandler = (text) => {
-    axios("http://localhost:8080/all").then(({ data }) => {
+    axios("https://romsem-omega.vercel.app/api/all").then(({ data }) => {
       const lowercaseText = text.toLowerCase();
 
       const filteredItems = Object.values(data)

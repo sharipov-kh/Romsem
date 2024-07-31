@@ -14,7 +14,7 @@ const ProductContent = ({ path, title, icon }) => {
   useEffect(() => {
     (async () => {
       setIsLoading(true);
-      await axios(`http://localhost:8080/${path}`).then(({ data }) =>
+      await axios(`https://romsem-omega.vercel.app/api/${path}`).then(({ data }) =>
         setProduct(data)
       );
       setIsLoading(false);
