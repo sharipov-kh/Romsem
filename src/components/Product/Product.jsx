@@ -12,6 +12,8 @@ const Product = () => {
   const [product, setProduct] = useState([]);
   const navigate = useNavigate();
 
+  
+
   useEffect(() => {
     (async () => {
       await axios(`https://romsem-omega.vercel.app/api/${path}/${id}`).then(

@@ -14,10 +14,10 @@ const Header = () => {
   const onClickBtnSearchHendle = () => setSearch(!search);
 
   const onSearchInputHandler = (text) => {
-    axios("https://romsem-omega.vercel.app/api/all").then(({ data }) => {
+    axios("https://sharipov-kh.github.io/Romsem-api/db.json").then(({ data }) => {
       const lowercaseText = text.toLowerCase();
 
-      const filteredItems = Object.values(data)
+      const filteredItems = Object.values(data.all)
         .reduce((acc, rec) => {
           const filteredRec = rec.filter((item) =>
             item.name.toLowerCase().includes(lowercaseText)
