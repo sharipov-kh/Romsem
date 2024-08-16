@@ -17,7 +17,7 @@ const Review = () => {
   };
 
   useEffect(() => {
-    axios("https://romsem-omega.vercel.app/api/reviews").then(({ data }) => setReviews(data));
+    axios("https://sharipov-kh.github.io/Romsem-api/db.json").then(({ data }) => setReviews(data.reviews));
   }, [review, setReviews]);
 
   return (

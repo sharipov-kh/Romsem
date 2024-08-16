@@ -12,12 +12,10 @@ const Product = () => {
   const [product, setProduct] = useState([]);
   const navigate = useNavigate();
 
-  
-
   useEffect(() => {
     (async () => {
-      await axios(`https://romsem-omega.vercel.app/api/${path}/${id}`).then(
-        ({ data }) => setProduct(data)
+      await axios(`https://sharipov-kh.github.io/Romsem-api/db.json`).then(
+        ({ data }) => setProduct(data.path.id)
       );
       window.scrollTo(0, 0);
     })();

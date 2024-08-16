@@ -27,9 +27,9 @@ const Slider = ({ NumArr }) => {
     const fetchData = async () => {
       try {
         const { data } = await axios.get(
-          "https://romsem-omega.vercel.app/api/all"
+          "https://sharipov-kh.github.io/Romsem-api/db.json"
         );
-        const flattenedData = Object.values(data).reduce((acc, rec) => {
+        const flattenedData = Object.values(data.all).reduce((acc, rec) => {
           return [...acc, ...rec];
         }, []);
         setSlide(getRandomItems(flattenedData, NumArr));

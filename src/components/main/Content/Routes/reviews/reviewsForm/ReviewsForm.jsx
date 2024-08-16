@@ -1,4 +1,3 @@
-import axios from "axios";
 import Button from "../../../../../UI/Button/Button";
 import styles from "./ReviewsForm.module.scss";
 import { useForm } from "react-hook-form";
@@ -23,7 +22,7 @@ const ReviewsForm = ({ cancelReviewHandler, setAdd }) => {
 
   const addReview = (data) => {
     axios
-      .post("https://romsem-omega.vercel.app/api/reviews", data)
+      .post("", data)
       .then(reset(), setAdd(false));
   };
 
